@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "111413128137",
+    "firebase_url": "https://qq-2-2b503.firebaseio.com",
+    "project_id": "qq-2-2b503",
+    "storage_bucket": "qq-2-2b503.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111413128137:android:20ac6ed8d3265ce8a9d618",
+        "android_client_info": {
+          "package_name": "com.example.qq_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111413128137-mnj6po17ds68d6joam85k9dt0rkvtlg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6_JEVTE5g6I8wqZC_ATbiPzFgFTg6oaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111413128137-mnj6po17ds68d6joam85k9dt0rkvtlg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

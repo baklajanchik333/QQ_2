@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryDark"
+    android:padding="20dp"
+    tools:context=".UpdateInfoUserActivity">
+
+    <TextView
+        android:id="@+id/updateInfoUserTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="@string/addInfoUserTitle"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/updateInfoUserTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_default_img" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_person"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nameEt"
+            android:inputType="textPersonName|textCapSentences"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ageTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_person"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ageEt"
+            android:inputType="number"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countryTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_city"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/countryEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/countryEt"
+            android:inputType="text|textCapSentences"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cityTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_city"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cityEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cityEt"
+            android:inputType="text|textCapSentences"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_phone"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phoneEt"
+            android:inputType="phone"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancelBtn"
+        android:backgroundTint="@color/colorAccentDark"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/continueBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccentDark"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/cancelBtn" />
+
+</RelativeLayout>

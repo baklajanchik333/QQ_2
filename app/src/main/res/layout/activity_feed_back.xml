@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    tools:context=".FeedBackActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Напишите разработчику"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/feedback_img" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Электронная почта: fff.fhbg2014@yandex.ru"
+        android:textColor="@color/colorWhite" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailFeedbackTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailFeedbackEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/feedbackTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailFeedbackTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_feedback"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/feedbackEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Сообщение..."
+            android:inputType="text|textCapSentences"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/feedbackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccentDark"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="Отправить" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">QQ_2</string>
+    <string name="startImg">TODO</string>
+    <string name="registerBtn">Регистрация</string>
+    <string name="loginBtn">Вход</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addInfoUserTitle">Укажите все необходимые данные, чтобы Вас могли узнать</string>
+    <string name="nameEt">Имя</string>
+    <string name="ageEt">Возраст</string>
+    <string name="countryEt">Страна</string>
+    <string name="cityEt">Город</string>
+    <string name="phoneEt">Телефон</string>
+    <string name="continueBtn">Продолжить</string>
+    <string name="nextBtn">Дальше</string>
+    <string name="skipBtn">Пропустить</string>
+    <string name="loginTitle">Авторизация</string>
+    <string name="loginDesc">Введите необходимые данные для авторизации</string>
+    <string name="loginImg">TODO</string>
+    <string name="loginBtnLog">Войти</string>
+    <string name="forgotPassBtn">Забыли пароль?</string>
+    <string name="backToRegisterBtn">Нет аккаунта? Создайте</string>
+    <string name="registerTitle">Регистрация</string>
+    <string name="registerDesc">Введите необходимые данные для регистрации</string>
+    <string name="registerImg">TODO</string>
+    <string name="emailEt">Email</string>
+    <string name="passwordEt">Пароль</string>
+    <string name="password2Et">Повторите пароль</string>
+    <string name="registerBtnReg">Зарегистрироваться</string>
+    <string name="backToLoginBtn">Уже есть аккаунт? Войдите</string>
+    <string name="exit">Выйти</string>
+    <string name="edit">Редактировать</string>
+    <string name="cancelBtn">Отмена</string>
+    <string name="uploadCoverBtn">Обновить обложку</string>
+    <string name="coverIv">TODO</string>
+    <string name="darkTheme">Тёмная тема</string>
+    <string name="search">Поиск</string>
+    <string name="home">Дом</string>
+    <string name="profile">Профиль</string>
+    <string name="message">Сообщения</string>
+    <string name="users">Пользователи</string>
+    <string name="attachFileBtn">TODO</string>
+    <string name="sendBtn">TODO</string>
+    <string name="backBtn">TODO</string>
+
+
+    <string name="titleAddPostEt">Заголовок...</string>
+    <string name="descAddPostEt">Описание...</string>
+    <string name="imageAddPostIv">TODO</string>
+    <string name="post_image">TODO</string>
+    <string name="groupChat">Создать групповой чат</string>
+    <string name="more">Ещё</string>
+    <string name="add_participant">Добавить участника в группу</string>
+    <string name="ratingEt">Ваш отзыв...</string>
+    <string name="infoProfile">Подробная информация</string>
+    <string name="infoProfileBtn">Подробная информация</string>
+    <string name="slide1">TODO</string>
+    <string name="textTittle1">Добро пожаловать!</string>
+    <string name="textDesc1">Это приложение для корпоротивного пользования</string>
+    <string name="slide2">TODO</string>
+    <string name="textTittle2">Обмен сообщениями</string>
+    <string name="textDesc2">Обменивайтесь сообщениями быстро и легко</string>
+    <string name="slide3">TODO</string>
+    <string name="textTittle3">Делитесь необходимой информацией</string>
+    <string name="textDesc3">Отправляейте публикации и иформацией, чтобы все пользователи были в курсе последних новостей</string>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryDark"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="@string/loginTitle"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/loginDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitle"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:text="@string/loginDesc"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/loginImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/loginDesc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/loginImg"
+        android:src="@drawable/login_img" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/emailEt"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_password"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordEt"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnLayout"
+        android:dividerPadding="10dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginBtnLog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorAccentDark"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="@string/loginBtnLog" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/logGoogle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:divider="@drawable/separator"
+        android:dividerPadding="10dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/forgotPassBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="@string/forgotPassBtn"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backToRegisterBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="@string/backToRegisterBtn"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

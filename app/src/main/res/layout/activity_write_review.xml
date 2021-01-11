@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    tools:context=".WriteReviewActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Оцените приолжение :)"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:numStars="5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ratingTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_about"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ratingEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ratingEt"
+            android:inputType="text"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ratingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingTIL"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccentDark"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="Оценить" />
+
+</RelativeLayout>

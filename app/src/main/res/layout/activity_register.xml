@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryDark"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/registerTitle"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/registerDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerTitle"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/registerDesc"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/registerImg"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/registerDesc"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/register_img"
+        android:contentDescription="@string/registerImg" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/emailEt"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_password"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordEt"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password2TIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTIL"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:counterTextColor="@color/colorAccent"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/ic_password"
+        app:startIconTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password2Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password2Et"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerBtnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backToLoginBtn"
+        android:backgroundTint="@color/colorAccentDark"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/registerBtnReg" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backToLoginBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/backToLoginBtn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SettingsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="?attr/actionBarTheme" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/qq"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updatePassBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Обновить пароль"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_update" />
+
+    </LinearLayout>
+
+</RelativeLayout>

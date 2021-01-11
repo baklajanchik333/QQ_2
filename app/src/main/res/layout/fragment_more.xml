@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    tools:context=".Fragments.MoreFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="?attr/actionBarTheme" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/qq"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settingsBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Настройки"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_settings" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="#109689" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/aboutAppBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="О приложении"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_about" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ratingBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Оцените приложение"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_rating" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/feedbackBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Обратная связь"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_feedback" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="#109689" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exitBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Выйти"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_exit" />
+
+    </LinearLayout>
+
+</RelativeLayout>
