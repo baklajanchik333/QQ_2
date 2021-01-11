@@ -41,7 +41,6 @@ public class AddInfoUserActivity extends AppCompatActivity {
     //Элементы
     private CircleImageView profileImg;
     private TextInputEditText nameEt, ageEt, countryEt, cityEt, phoneEt;
-    private MaterialButton continueBtn;
     private ProgressDialog progressDialog;
 
     //БД
@@ -78,7 +77,7 @@ public class AddInfoUserActivity extends AppCompatActivity {
         cityEt = findViewById(R.id.cityEt);
         phoneEt = findViewById(R.id.phoneEt);
 
-        continueBtn = findViewById(R.id.continueBtn);
+        MaterialButton continueBtn = findViewById(R.id.continueBtn);
         //</editor-fold>
 
         //Инициализация массивой для разрешений
